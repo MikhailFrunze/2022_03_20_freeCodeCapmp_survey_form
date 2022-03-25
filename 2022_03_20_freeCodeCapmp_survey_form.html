@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>freeCodeCapmp Survey Form</title>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1 id="title" class="text-center">Welcome to Mi High Beats Survey Form</h1>
+            <p id="description" class="description text-center">Thank you for taking the time to help us improve our products</p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group"> 
+                <label id="email-label" for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email address" required>
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Age (optional)</label>
+                <input type="number" name="age" id="number" min="10" max="99" placeholder="Age">
+            </div>
+<div class="form-group">
+            <p>Which option best describes your current role?</p>
+            <select id="dropdown" class="form-control" required>
+                <option disabled selected value>Select current role</option>
+                <option value="beatmaker">Beatmaker</option>
+                <option value="producer">Producer</option>
+                <option value="artist">Artist</option>
+                <option value="preferNo">Prefer not to say</option>
+                <option value="other">Other</option>
+            </select>
+</div>
+<div class="form-group">
+            <p>Would you recommend Mi High Beats to a friend?</p>
+            <label name="user-recommend" class="input-radio" value="definitely"><input type="radio">Definitely</label>
+            <label name="user-recommend" class="input-radio" value="maybe"><input type="radio">Maybe</label>
+            <label name="user-recommend" class="input-radio" value="not-sure"><input type="radio">Not sure</label>
+</div>
+<div class="form-group">
+            <p>Which type of beats would you like to see more? (Check all that apply)</p>
+            <label><input type="checkbox" class="input-checkbox" name="prefer" value="trap">Trap</label>
+            <label><input type="checkbox" class="input-checkbox" name="prefer" value="dance">Dance</label>
+            <label><input type="checkbox" class="input-checkbox" name="prefer" value="r&b">R&B</label>
+            <label><input type="checkbox" class="input-checkbox" name="prefer" value="rock">Rock</label>
+            <label><input type="checkbox" class="input-checkbox" name="prefer" value="ethnic">Ethnic</label>
+</div>
+<div class="form-group">
+            <p>Any comments or suggestions?</p>
+            <textarea class="input-textarea" placeholder="Enter your comment here..."></textarea>
+</div>
+<div class="form-group">
+    <button type="submit" class="submit-button" id="submit">Submit</button>
+</div>
+        </form>
+    </div>
+    
+
+</body>
+
+</html>
